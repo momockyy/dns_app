@@ -1,0 +1,14 @@
+version: "3"
+services:
+  as:
+    build: ./AS
+    ports:
+      - "53533:53533"
+  fs:
+    build: ./FS
+    ports:
+      - "9090:9090"
+  us:
+    build: ./US
+    ports:
+      - "8080:8080"
